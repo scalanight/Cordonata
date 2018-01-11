@@ -1,0 +1,12 @@
+nav {
+  border-bottom: 1px solid lightgray;
+  background: #e9ecef;
+}
+
+nav a {
+  color: lightcoral;
+}
+
+.jumbotron {
+  padding-top: 112px;
+}
