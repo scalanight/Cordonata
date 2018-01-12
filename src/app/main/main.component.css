@@ -9,4 +9,43 @@ nav a {
 
 .jumbotron {
   padding-top: 112px;
+  padding-bottom: 100px;
+}
+
+.speaker{
+  color: white;
+}
+
+.speaker img{
+  margin: 10px 0px;
+  border-radius: 50% !important;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.row .profile {
+  min-height: 400px;
+  border: 3px solid white;
+  border-radius: 20px;
+  margin: 30px;
+}
+
+.container-fluid{
+  padding: 50px 0px;
+}
+
+.section-header::after {
+  content: '';
+  display: block;
+  width: 1.5em;
+  border-top: 2px solid #d15b43;
+  margin: 1em auto;
+}
+
+.sponsor img{
+  padding-left: 20px;
+}
+
+.sponsor p {
+  padding: 20px 0px;
 }
