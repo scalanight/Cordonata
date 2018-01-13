@@ -5,20 +5,20 @@
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">행사소개 <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="gotoLink('intro')">행사소개 </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">프로그램</a>
+        <a class="nav-link" href="#" (click)="gotoLink('program')">프로그램</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">발표자</a>
+        <a class="nav-link" href="#"  (click)="gotoLink('speaker')">발표자</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">장소</a>
+        <a class="nav-link" href="#"  (click)="gotoLink('location')">장소</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="#">후원</a>
+          <a class="nav-link" href="#"  (click)="gotoLink('sponsor')">후원</a>
         </li>
       <!-- <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
@@ -32,14 +32,21 @@
     <div class="jumbotron">
       <div class="container">
         <h1 class="display-3">Scala Night</h1>
+        <p>
+            <i class="fa fa-calendar-o" aria-hidden="true"></i> 2018년 4월 8일 (토) 
+        </p>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p class="custom-icon">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+        </p>
       </div>
     </div>
     
     <!-- 행사 소개 -->
-    <div class="container-fluid">
-      <!-- Example row of columns -->
-
+    <div id="intro" class="container-fluid test">
+    <!-- Example row of columns -->
       <h2 class="text-center section-header" >
         행사 소개
       </h2>
@@ -63,7 +70,7 @@
     </div> <!-- /container -->
 
     <!-- 프로그램 -->
-    <div class="container-fluid">
+    <div id="program" class="container-fluid">
 
         <h3 class="text-center section-header">
           프로그램
@@ -118,7 +125,7 @@
 
 
     <!-- 발표자 -->
-    <div class="container-fluid speaker" style="background-color:lightblue;">
+    <div id="speaker" class="container-fluid speaker" style="background-color:lightblue;">
 
         <h3 class="text-center section-header">
           발표자
@@ -130,7 +137,7 @@
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="profile">
                   <div class="text-center">
-                    <img class="img-thumbnail rounded" src="assets/images/martin-odersky.png">
+                    <img class="img-thumbnail rounded" src="assets/images/speaker-martin.jpg">
                   </div>
                   <h3 class="text-center">마틴 오더스키</h3>
                   <p class="text-center">
@@ -141,7 +148,7 @@
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="profile">
                     <div class="text-center">
-                        <img class="img-thumbnail rounded" src="assets/images/martin-odersky.png">
+                        <img class="img-thumbnail rounded" src="assets/images/speaker-jonas.jpg">
                       </div>
                   <h3 class="text-center">요나스 보네어</h3>
                   <p class="text-center">
@@ -157,7 +164,7 @@
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="profile">
                     <div class="text-center">
-                        <img class="img-thumbnail rounded" src="assets/images/martin-odersky.png">
+                        <img class="img-thumbnail rounded" src="assets/images/speaker-jroper.jpeg">
                       </div>
                   <h3 class="text-center">제임스 로퍼</h3>
                   <p class="text-center">
@@ -167,7 +174,7 @@
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="profile">
                     <div class="text-center">
-                        <img class="img-thumbnail rounded" src="assets/images/martin-odersky.png">
+                        <img class="img-thumbnail rounded" src="assets/images/speaker-donald.jpeg">
                       </div>
                   <h3 class="text-center">도날드 트럼프</h3>
                   <p class="text-center">
@@ -177,7 +184,7 @@
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="profile">
                     <div class="text-center">
-                        <img class="img-thumbnail rounded" src="assets/images/martin-odersky.png">
+                        <img class="img-thumbnail rounded" src="assets/images/speaker-choi.jpg">
                       </div>
                   <h3 class="text-center">최정열</h3>
                   <p class="text-center">
@@ -187,9 +194,9 @@
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="profile">
                     <div class="text-center">
-                        <img class="img-thumbnail rounded" src="assets/images/martin-odersky.png">
+                        <img class="img-thumbnail rounded" src="assets/images/speaker-momoland-jui.jpeg">
                       </div>
-                  <h3 class="text-center">로날드 쿤</h3>
+                  <h3 class="text-center">주이</h3>
                   <p class="text-center">
                   </p>
                 </div>
@@ -200,21 +207,22 @@
       </div> <!-- /container -->
 
     <!-- 장소 -->
-    <div class="container-fluid">
+    <div id="location" class="container-fluid">
       <h3 class="text-center section-header">
         장소
       </h3>
       <!-- Example row of columns -->
       <div class="row justify-content-md-center">
         <div class="col-md-8">
-          <h5>주소: 서울 서대문구 연희로2길 62 한빛 미디어</h5>
+          <h5><i class="fa fa-map-marker" aria-hidden="true"></i> 주소: 서울 서대문구 연희로2길 62 한빛 미디어</h5>
           <img class="img-fluid" src="assets/images/naver-map.png">
+          <h5><i class="fa fa-bus" aria-hidden="true"></i> 대중교통 이용을 부탁드립니다.</h5>
         </div>
       </div>
     </div> <!-- /container -->
 
     <!-- 후원 -->
-    <div class="container-fluid sponsor">
+    <div id="sponsor" class="container-fluid sponsor">
         <h3 class="text-center section-header">
           후원
         </h3>

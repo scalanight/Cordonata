@@ -49,3 +49,39 @@ nav a {
 .sponsor p {
   padding: 20px 0px;
 }
+
+
+/* Style all font awesome icons */
+.custom-icon .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.custom-icon .fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.custom-icon .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.custom-icon .fa-twitter {
+  background: #55ACEE;
+  color: white;
+} 
+
+/* Youtube */
+.custom-icon .fa-youtube{
+  background: #bb0000;
+  color: white;
+}
