@@ -6,7 +6,6 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-
 @NgModule({
   declarations: [
     AppComponent
