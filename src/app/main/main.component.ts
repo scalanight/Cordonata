@@ -13,7 +13,11 @@ export class MainComponent implements OnInit {
   constructor(private _scrollToService: ScrollToService) { }
 
   ngOnInit() {
-    console.log(naver);
+    this.initMaps();
+  }
+
+  // initNaverMapApi
+  initMaps() {
     const mapOptions = {
       center: new naver.maps.LatLng(37.559348, 126.927818),
       zoom: 11
@@ -27,15 +31,14 @@ export class MainComponent implements OnInit {
     });
   }
 
+  // scrolling
   gotoLink(target) {
     const config: ScrollToConfigOptions = {
       target: target,
-      offset: -50
+      offset: -44
     };
 
     this._scrollToService.scrollTo(config);
-    
-    console.log(target)
     return false
   }
 

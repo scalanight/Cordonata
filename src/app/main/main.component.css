@@ -1,18 +1,42 @@
 nav {
-  border-bottom: 1px solid lightgray;
-  background: #e9ecef;
+  /* border-bottom: 1px solid lightgray; */
+  background: #999;
+  background-color: rgba(0, 0, 0, .85);
+  height: 45px;
 }
 
 nav a {
-  color: lightcoral;
+  color: rgba(169, 171, 174, .85);
 }
 
 .jumbotron {
+  color: white;
+  background-image: url('/assets/images/bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   padding-top: 112px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 740px) {
+  .bg-ci{
+    background-image: url('/assets/images/ci-background.png');
+    background-size: 100% 100%;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    right:100px;
+  }
+}
+
+#intro {
+  background-color: rgba(32, 37, 43);
+  color: white;
 }
 
 .speaker{
+  background-color:#2F4F4F;
   color: white;
 }
 
@@ -23,6 +47,7 @@ nav a {
   max-height: 150px;
 }
 
+
 .row .profile {
   min-height: 400px;
   border: 3px solid white;
@@ -30,8 +55,12 @@ nav a {
   margin: 30px;
 }
 
+.custom-icon {
+  padding-top: 100px;
+}
+
 .container-fluid{
-  padding: 50px 0px;
+  padding: 50px 15px;
 }
 
 .section-header::after {
@@ -84,4 +113,26 @@ nav a {
 .custom-icon .fa-youtube{
   background: #bb0000;
   color: white;
+}
+
+
+.staff::after {
+  background-color: #344D3D;
+  content: '';
+  /* top: -80px; */
+  left: 0;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 0,0 100,100' style='fill:%23FFFFFF%3B' /%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  transform: scaleY(-1);
+}
+
+.footer {
+  position: relative;
+  margin-bottom: -1em;
+  color:white;
 }

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md fixed-top">
-  <a class="navbar-brand" href="#">Scala Night 2018</a>
+  <!-- <a class="navbar-brand" href="#">Scala Night 2018</a> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -19,7 +19,10 @@
       </li>
       <li class="nav-item">
           <a class="nav-link" href="#"  (click)="gotoLink('sponsor')">후원</a>
-        </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">language</a>
+      </li>
       <!-- <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
       </li> -->
@@ -28,24 +31,27 @@
 </nav>
 
 <main role="main">
-
     <div class="jumbotron">
       <div class="container">
+        <div class='bg-ci'></div>
         <h1 class="display-3">Scala Night</h1>
         <p>
-            <i class="fa fa-calendar-o" aria-hidden="true"></i> 2018년 4월 8일 (토) 
+            <i class="fa fa-calendar-o" aria-hidden="true"></i><span> 2018년 4월 14일 (토) 늦은 1시 ~ 7시</span><br>
+            <i class="fa fa-user" aria-hidden="true"></i><span>&nbsp; 180명</span><br>
+            <i class="fa fa-tag" aria-hidden="true"></i><span>&nbsp; 스칼라에 관심 있는 누구나</span><br>
+            <i class="fa fa-credit-card" aria-hidden="true"></i><span>&nbsp; 20,000</span><br>
         </p>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <a class="btn btn-outline-secondary" href="#">Coming soon</a>
         <p class="custom-icon">
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-youtube"></a>
+          <!-- <a href="#" class="fa fa-youtube"></a> -->
         </p>
       </div>
     </div>
     
     <!-- 행사 소개 -->
-    <div id="intro" class="container-fluid test">
+    <div id="intro" class="container-fluid">
     <!-- Example row of columns -->
       <h2 class="text-center section-header" >
         행사 소개
@@ -54,16 +60,18 @@
       <div class="row justify-content-md-center">
         <div class="col-md-8">
           <p>
-              Scala Night는 스칼라 개발자를 위해 라스칼라 코딩단 X 한국 플레이! 사용자 그룹 커뮤니티에서 주관하는 비영리 컨퍼런스입니다.
+              스칼라를 대하는 우리의 자세
           </p>
           <br>
           <p>
-              블라 블라 블라 블라 블라 블라
+              스칼라나이트는 스칼라 언어에 관심있는 모든 프로그래머를 위한 행사입니다.
+              처음 시작 하는 이번 스칼라나이트 행사에서는 스칼라의 현재를 조망하고 미래를 준비하는 기회를 마련 해보았습니다.
+              이번 기회를 통해 스칼라를 사랑하는 많은 분들이 서로 만나고, 스칼라를 바라보는 다양한 시각을 접할 수 있는 기회가 되기를 바랍니다.
           </p>
           <br>
           <br>
           <p>
-              본 행사는 커뮤니티 멤버들의 자발적인 참여로 이루어집니다.
+              이번 행사는 라스칼라 코딩단, 플레이 유저 그룹에서 비영리 행사로 개최됩니다.
           </p>
         </div>
       </div>
@@ -84,7 +92,7 @@
                   <th scope="col"></th>
                   <th scope="col">시간</th>
                   <th scope="col">세션 1</th>
-                  <th scope="col">세션 2</th>
+                  <!-- <th scope="col">세션 2</th> -->
                 </tr>
               </thead>
               <tbody>
@@ -92,31 +100,37 @@
                   <th scope="row">1</th>
                   <td>13:00 ~ 13:40</td>
                   <td>마틴 오더스키 - 스칼라 어디로 가고 있는가?</td>
-                  <td>김경범 - 나는 어디로 가고 있는가?</td>
+                  <!-- <td>김경범 - 나는 어디로 가고 있는가?</td> -->
                 </tr>
                 <tr>
                   <th scope="row">2</th>
                   <td>13:50 ~ 14:30</td>
                   <td>트럼프 - 북한이 맞이할 최후</td>
-                  <td>김정은 - 한반도의 적화통일 가능성에 대한 고찰</td>
+                  <!-- <td>김정은 - 한반도의 적화통일 가능성에 대한 고찰</td> -->
                 </tr>
                 <tr class="table-secondary">
-                  <th scope="row">3</th>
+                  <th scope="row"></th>
                   <td>14:30 ~ 15:00</td>
                   <td colspan="2"> Break time</td>
                 </tr>
                 <tr>
-                  <th scope="row">4</th>
+                  <th scope="row">3</th>
                   <td>15:00 ~ 15:40</td>
                   <td>제임스 로퍼 - 볼곰아니고 라곰</td>
-                  <td>로날드 쿤 - 아카 동산의 알파카</td>
+                  <!-- <td>로날드 쿤 - 아카 동산의 알파카</td> -->
                 </tr>
                 <tr>
-                  <th scope="row">5</th>
+                  <th scope="row">4</th>
                   <td>15:50 ~ 16:30</td>
                   <td>요나스 보네어 - 라이트밴드의 가치와 미래</td>
-                  <td>김진억 - 내가 갓진억이라고 불리게 이유</td>
+                  <!-- <td>김진억 - 내가 갓진억이라고 불리게 이유</td> -->
                 </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>15:00 ~ 15:40</td>
+                    <td>제임스 로퍼 - 볼곰아니고 라곰</td>
+                    <!-- <td>로날드 쿤 - 아카 동산의 알파카</td> -->
+                  </tr>
               </tbody>
               </table>
           </div>
@@ -125,7 +139,7 @@
 
 
     <!-- 발표자 -->
-    <div id="speaker" class="container-fluid speaker" style="background-color:lightblue;">
+    <div id="speaker" class="container-fluid speaker">
 
         <h3 class="text-center section-header">
           발표자
@@ -216,7 +230,7 @@
         <div class="col-md-8">
           <h5><i class="fa fa-map-marker" aria-hidden="true"></i> 주소: 서울 서대문구 연희로2길 62 한빛 미디어</h5>
           <!-- <img class="img-fluid" src="assets/images/naver-map.png"> -->
-          <div id="map" style="width:100%;height:400px;"></div>
+          <div id="map" style="width:100%;height:500px;"></div>
           <h5><i class="fa fa-bus" aria-hidden="true"></i> 대중교통 이용을 부탁드립니다.</h5>
         </div>
       </div>
@@ -233,34 +247,54 @@
             <h5 class="text-center">스칼라 나이트는 아래 후원사의 도움으로 진행 됩니다. 감사합니다.</h5>
             <p class="text-center">
               <img style="max-width:200px" src="assets/images/sponsor-naverd2.png">
-              <img style="max-width:200px" src="assets/images/sponsor-github.png">
-              <img style="max-width:200px" src="assets/images/sponsor-google.png">
+              <!-- <img style="max-width:200px" src="assets/images/sponsor-github.png"> -->
+              <!-- <img style="max-width:200px" src="assets/images/sponsor-google.png"> -->
             </p>
-            <p class="text-center">
-              <img style="max-width:200px" src="assets/images/sponsor-hanbit.png">
-              <img style="max-width:200px" src="assets/images/sponsor-insight.png">
-            </p>
+            <!-- <p class="text-center"> -->
+              <!-- <img style="max-width:200px" src="assets/images/sponsor-hanbit.png"> -->
+              <!-- <img style="max-width:200px" src="assets/images/sponsor-insight.png"> -->
+            <!-- </p> -->
           </div>
         </div>
       </div> <!-- /container -->
 
     <!-- 스태프 -->
-    <div class="container-fluid">
+    <div class="container-fluid staff">
         <h3 class="text-center section-header">
           스태프
         </h3>
         <!-- Example row of columns -->
         <div class="row justify-content-md-center">
-          <div class="col-md-8">
-            <h5 class="text-center">행사장에서 붉은 옷을 입은 갓갓 원석님을 찾아주세요.</h5>
+          <div class="col-md-2 text-center">
+            <p>
+                <span>김경범 <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></span>
+            </p>
+            <p>
+                <span>김경범 <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></span>
+            </p>
           </div>
+          <div class="col-md-2 text-center">
+              <p>
+                  <span>김경범 <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></span>
+              </p>
+              <p>
+                  <span>김경범 <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></span>
+              </p>
+            </div>
+            <div class="col-md-2 text-center">
+                <p>
+                    <span>김경범 <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></span>
+                </p>
+                <p>
+                    <span>김경범 <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></span>
+                </p>
+              </div>
         </div>
+
       </div> <!-- /container -->
 
   </main>
 
-
-
-<footer class="container text-right">
+<footer class="footer container text-right">
     <p>&copy; Scala night</p>
 </footer>
