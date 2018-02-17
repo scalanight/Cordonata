@@ -31,7 +31,7 @@ nav a {
 }
 
 #intro {
-  background-color: rgba(32, 37, 43);
+  background-color: rgba(32, 37, 43, 1);
   color: white;
 }
 
