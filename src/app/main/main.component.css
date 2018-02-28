@@ -79,6 +79,13 @@ nav a {
   padding: 20px 0px;
 }
 
+tr.table-secondary th{
+  background-color: #f8f8f8
+}
+
+tr.table-secondary td{
+  background-color: #f8f8f8
+}
 
 /* Style all font awesome icons */
 .custom-icon .fa {
